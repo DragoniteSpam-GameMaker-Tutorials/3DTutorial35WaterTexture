@@ -23,6 +23,10 @@ camera_apply(camera);
 gpu_set_tex_repeat(true);
 gpu_set_tex_filter(true);
 
+matrix_set(matrix_world, matrix_build(0, 0, 0, 0, 0, 0, 32, 32, 32));
+vertex_submit(vb_terrain, pr_trianglelist, sprite_get_texture(spr_grass, 0));
+matrix_set(matrix_world, matrix_build_identity());
+
 shader_set(shd_water);
 
 var displacement_sampler = shader_get_sampler_index(shd_water, "displacementMap");
@@ -31,6 +35,8 @@ var time_uniform = shader_get_uniform(shd_water, "time");
 shader_set_uniform_f(time_uniform, current_time / 1000);
 // Everything must be drawn after the 3D projection has been set
 vertex_submit(vbuffer, pr_trianglelist, sprite_get_texture(spr_water_blue, 0));
+
+shader_set(shd_basic_3d_stuff);
 
 
 // Draw the player

@@ -8,9 +8,15 @@ varying vec4 v_vColour;
 
 void main()
 {
-    vec4 object_space_pos = vec4( in_Position.x, in_Position.y, in_Position.z, 1.0);
+    vec4 object_space_pos = vec4(in_Position, 1.0);
     gl_Position = gm_Matrices[MATRIX_WORLD_VIEW_PROJECTION] * object_space_pos;
     
+    vec3 eye_space_normal = (gm_Matrices[MATRIX_WORLD_VIEW] * vec4(in_Normal, 0.0)).xyz;
+    vec3 eye_space_camera = vec3(0.0, 0.0, 1.0);
+    
+    float CdotN = clamp(1.0 + dot(normalize(eye_space_camera), normalize(eye_space_normal)), 0.25, 0.75);
+    
     v_vColour = in_Colour;
+    v_vColour.a = CdotN;
     v_vTexcoord = in_TextureCoord;
 }

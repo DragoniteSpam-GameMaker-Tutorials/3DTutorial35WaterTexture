@@ -61,3 +61,5 @@ vertex_end(vbuffer);
 instance_create_depth(0, 0, 0, Player);
 
 vb_player = load_model("player.d3d");
+
+vb_terrain = load_model("terrain.d3d");
