@@ -2,9 +2,12 @@
   "resources": [
     {"id":{"name":"spr_grass","path":"sprites/spr_grass/spr_grass.yy",},"order":0,},
     {"id":{"name":"vertex_add_point","path":"scripts/vertex_add_point/vertex_add_point.yy",},"order":0,},
+    {"id":{"name":"spr_water_displace","path":"sprites/spr_water_displace/spr_water_displace.yy",},"order":9,},
     {"id":{"name":"load_model","path":"scripts/load_model/load_model.yy",},"order":1,},
     {"id":{"name":"spr_shadow","path":"sprites/spr_shadow/spr_shadow.yy",},"order":6,},
+    {"id":{"name":"shd_water","path":"shaders/shd_water/shd_water.yy",},"order":7,},
     {"id":{"name":"fnt_game","path":"fonts/fnt_game/fnt_game.yy",},"order":5,},
+    {"id":{"name":"spr_water_blue","path":"sprites/spr_water_blue/spr_water_blue.yy",},"order":8,},
     {"id":{"name":"spr_heart","path":"sprites/spr_heart/spr_heart.yy",},"order":1,},
     {"id":{"name":"screen_to_world","path":"scripts/screen_to_world/screen_to_world.yy",},"order":3,},
     {"id":{"name":"shd_basic_3d_stuff","path":"shaders/shd_basic_3d_stuff/shd_basic_3d_stuff.yy",},"order":0,},

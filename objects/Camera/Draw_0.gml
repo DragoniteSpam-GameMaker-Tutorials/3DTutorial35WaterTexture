@@ -21,8 +21,16 @@ camera_set_proj_mat(camera, proj_mat);
 camera_apply(camera);
 
 gpu_set_tex_repeat(true);
+gpu_set_tex_filter(true);
+
+shader_set(shd_water);
+
+var displacement_sampler = shader_get_sampler_index(shd_water, "displacementMap");
+texture_set_stage(displacement_sampler, sprite_get_texture(spr_water_displace, 0));
+var time_uniform = shader_get_uniform(shd_water, "time");
+shader_set_uniform_f(time_uniform, current_time / 1000);
 // Everything must be drawn after the 3D projection has been set
-vertex_submit(vbuffer, pr_trianglelist, sprite_get_texture(spr_grass, 0));
+vertex_submit(vbuffer, pr_trianglelist, sprite_get_texture(spr_water_blue, 0));
 
 
 // Draw the player
