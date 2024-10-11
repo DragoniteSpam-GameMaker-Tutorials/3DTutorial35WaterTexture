@@ -1,0 +1,14 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"fnt_game","order":5,"path":"fonts/fnt_game/fnt_game.yy",},
+    {"name":"Player","order":1,"path":"objects/Player/Player.yy",},
+    {"name":"load_model","order":1,"path":"scripts/load_model/load_model.yy",},
+    {"name":"screen_to_world","order":3,"path":"scripts/screen_to_world/screen_to_world.yy",},
+    {"name":"shd_water","order":7,"path":"shaders/shd_water/shd_water.yy",},
+    {"name":"spr_heart","order":1,"path":"sprites/spr_heart/spr_heart.yy",},
+    {"name":"spr_shadow","order":6,"path":"sprites/spr_shadow/spr_shadow.yy",},
+    {"name":"spr_water_blue","order":8,"path":"sprites/spr_water_blue/spr_water_blue.yy",},
+    {"name":"spr_water_displace","order":9,"path":"sprites/spr_water_displace/spr_water_displace.yy",},
+  ],
+}

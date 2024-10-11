@@ -1,11 +1,12 @@
 {
-  "type": 1,
-  "parent": {
-    "name": "3D Tutorial 35 - Water Texture",
-    "path": "3D Tutorial 35 - Water Texture.yyp",
+  "$GMShader":"",
+  "%Name":"shd_water",
+  "name":"shd_water",
+  "parent":{
+    "name":"3D Tutorial 35 - Water Texture",
+    "path":"3D Tutorial 35 - Water Texture.yyp",
   },
-  "resourceVersion": "1.0",
-  "name": "shd_water",
-  "tags": [],
-  "resourceType": "GMShader",
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
 }
